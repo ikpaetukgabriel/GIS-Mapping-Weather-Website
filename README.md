@@ -1,5 +1,5 @@
 # OVERVIEW
-This website displays weather report of different cities around the world on an ARCGIS map. It gets the required data, such as temperature, location, and so forth from an API server. Designed with JavaScript, CSS, and HTML.
+This website displays weather reports of different cities around the world on an ArcGIS map. It gets the required data, such as temperature, location, and so forth from an API server. Designed with JavaScript, CSS, and HTML.
 It uses Visual Studio Code, ARCGIS map library, API from OpenWeather, and github.
 
 # DEVELOPMENT ENVIRONMENT
