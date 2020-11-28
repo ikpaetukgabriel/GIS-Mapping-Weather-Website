@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Web</title>
+
+    <link rel="stylesheet" type="text/css" href="map.css">
+    <style>
+        html, body, #viewDiv {
+          padding: 0;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+        }
+      </style>
+      <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+      <script src="https://js.arcgis.com/4.15/"></script>
+      <script src="map.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <div id="space">
+                <li><a href="map.html">WEATHER WEB</a></li>
+            </div>
+
+            <div>
+                
+                <li><canvas id="Canvas-one" width="20" height="20" style="border:1px solid none;"></canvas></li>
+                <li><span>Less than 1°C</span></li>
+                
+                <li><canvas id="Canvas-two" width="20" height="20" style="border:1px solid none;"></canvas></li>
+                <li><span>Less than 11°C</span></li>
+                
+                <li><canvas id="Canvas-three" width="20" height="20" style="border:1px solid none;"></canvas></li>
+                <li><span>Less than 21°C</span></li>
+                
+                <li><canvas id="Canvas-four" width="20" height="20" style="border:1px solid none;"></canvas></li>
+                <li><span>Less than 31°C</span></li>
+                
+                <li><canvas id="Canvas-five" width="20" height="20" style="border:1px solid none;"></canvas></li>
+                <li><span> 31°C and higher</span></li>
+                
+            </div>
+
+        </ul>
+    </div>
+    <div id="viewDiv"></div>
+
+<script src="indicator.js" ></script>
+</body>
+</html> 

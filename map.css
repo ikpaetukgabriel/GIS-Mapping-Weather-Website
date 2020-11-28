@@ -1,0 +1,40 @@
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(3, 15, 20);
+  border-color: #036d1a;
+  border: 2px solid;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right:100px;
+  padding-left: 120px;
+  text-decoration: none;
+}
+.navbar canvas{
+display: block;
+padding: 14px 0;
+}
+.navbar span{
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right:50px;
+  padding-left: 5px;
+  text-decoration: none;
+}
+

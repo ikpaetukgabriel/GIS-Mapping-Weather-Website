@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+function loadDoc() {
+
+  
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+          
+        var data = JSON.parse(this.responseText);
+          for (i of data.list){ 
+
+              console.log(i.coord.lon),
+              console.log(i.coord.lat)
+            } // End of Loop
+  }
+}; // End of XML Call back Function
+
+
+  city_id =""
+
+  xhttp.open("GET", "http://api.openweathermap.org/data/2.5/group?id=5128581,4140963&units=metric&appid=64597b3665f4c8b9f918b0da999890ad", true);
+  xhttp.send();
+}
+</script>
+</body>
+</html>
+
